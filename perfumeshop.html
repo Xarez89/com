@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxScents</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header h1 {
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff4081;
+        }
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-card .details {
+            padding: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .product-card .price {
+            font-size: 1.3em;
+            color: #e91e63;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-card .buy-btn {
+            padding: 12px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .buy-btn:hover {
+            background-color: #d81b60;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LuxScents</h1>
+    <p>เสน่ห์ที่ไม่มีวันจางหาย</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">สินค้า</a></li>
+        <li><a href="#">โปรโมชั่น</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+    </ul>
+</nav>
+
+<div class="products">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300" alt="น้ำหอม 1">
+        <div class="details">
+            <h3>น้ำหอมแบรนด์ A</h3>
+            <p>น้ำหอมจากแบรนด์หรู ที่จะทำให้คุณมีเสน่ห์ยิ่งขึ้นทุกครั้งที่ใช้</p>
+            <div class="price">฿1,500</div>
+            <a href="#" class="buy-btn">ซื้อเลย</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300" alt="น้ำหอม 2">
+        <div class="details">
+            <h3>น้ำหอมแบรนด์ B</h3>
+            <p>สัมผัสความหรูหราอย่างแท้จริงด้วยน้ำหอมกลิ่นหอมละมุนที่ไม่ซ้ำใคร</p>
+            <div class="price">฿2,000</div>
+            <a href="#" class="buy-btn">ซื้อเลย</a>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/500x300" alt="น้ำหอม 3">
+        <div class="details">
+            <h3>น้ำหอมแบรนด์ C</h3>
+            <p>เพิ่มความมั่นใจให้คุณด้วยกลิ่นหอมเย้ายวนที่ติดทนนานตลอดทั้งวัน</p>
+            <div class="price">฿1,800</div>
+            <a href="#" class="buy-btn">ซื้อเลย</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 ร้านน้ำหอมหรูหรา | <a href="#">นโยบายความเป็นส่วนตัว</a></p>
+</footer>
+
+</body>
+</html>
